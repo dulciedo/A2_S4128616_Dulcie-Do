@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DC Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link href="movie.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <header class="navbar">
+      <a class="logo-box" id="logo-box" href="home.html" aria-label="Back to home">
+        <img src="img/logo.png" alt="Logo" />
+      </a>
+
+      <nav class="nav-info">
+        <a class="active" href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" class="contact-trigger">Contact</a>
+      </nav>
+
+      <div class="nav-app">
+        <a href="https://www.facebook.com/dulcie.do.497404/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="img/fb.png" alt="Facebook icon" />
+        </a>
+        <a href="https://www.instagram.com/dul.ciee__/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="img/ins.png" alt="Instagram icon" />
+        </a>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="home.html">Home</a>
+        <a class="active" href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" class="contact-trigger">Contact</a>
+      </div>
+    </header>
+
+    <!-- MAIN: MOVIE PAGE -->
+    <main class="movie-page">
+      <!-- MOVIE BLOCK-->
+      <section class="movie-block">
+        <!--"LINGERING" LETTER ANIMATION -->
+        <h1 class="movie-title">
+          <span class="movie-letter movie-letter-1">L</span><span class="movie-letter movie-letter-2">I</span><span class="movie-letter movie-letter-3">N</span><span class="movie-letter movie-letter-4">G</span><span class="movie-letter movie-letter-5">E</span><span class="movie-letter movie-letter-6">R</span><span class="movie-letter movie-letter-7">I</span><span class="movie-letter movie-letter-8">N</span><span class="movie-letter movie-letter-9">G</span>
+        </h1>
+
+        <!-- MOVIE CONTENT GRID -->
+        <div class="movie-content-grid">
+          <!-- CAROUSEL WRAP-->
+          <div class="carousel-wrap auto-carousel" data-speed="0.78">
+            <button class="carousel-but prev" type="button" aria-label="Scroll left">&#8249;</button>
+            <!-- CAROUSEL TRACK: 3 IMAGES -->
+            <div class="carousel-track">
+              <figure class="carousel-item">
+                <img src="img/movie.png" alt="Lingering visual 1" />
+              </figure>
+              <figure class="carousel-item">
+                <img src="img/movie1.png" alt="Lingering visual 2" />
+              </figure>
+              <figure class="carousel-item">
+                <img src="img/movie2.png" alt="Lingering visual 3" />
+              </figure>
+            </div>
+            <button class="carousel-but next" type="button" aria-label="Scroll right">&#8250;</button>
+          </div>
+
+          <!-- MOVIE DESCRIPTION-->
+          <p class="movie-description">
+            "LINGERING" is a short film that I shot and edited myself using After Effects. It explores the idea of
+            slowing down and reflecting on the beautiful moments from the past that we may have forgotten in today's
+            fast-paced life. By the time we begin to realize their value, those moments often exist only in our dreams.
+          </p>
+
+          <!-- VIDEO SHELL-->
+          <div class="video-shell">
+            <button class="video-play-but" type="button" aria-label="Play video">&#9658;</button>
+            <iframe id="youtube-player" class="movie-video" data-click-play src="https://www.youtube.com/embed/WpjdUS9g9Xw?si=O7wvT7hE3nbgYAc-&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-cursor-overlay"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="page-footer" aria-label="Page footer">
+      <p class="footer-text">©2026 Dulcie Do. All rights reserved.</p>
+    </footer>
+
+    <!-- CONTACT POPUP-->
+    <div class="contact-popup-overlay" id="contact-popup-overlay">
+      <div class="contact-popup">
+        <button class="popup-close" id="popup-close" type="button" aria-label="Close popup">&times;</button>
+        <div class="popup-grid">
+          <div class="popup-left">
+            <h2 class="popup-title">CONTACT</h2>
+            <p class="popup-email">Email: dung21505@gmail.com</p>
+          </div>
+          <div class="popup-right">
+            <h2 class="popup-title">SOCIAL MEDIA</h2>
+            <p class="popup-social">Facebook: Dulcie Do</p>
+            <p class="popup-social">Instagram: dul.ciee__</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAWN CURSOR-->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <script src="contact.js"></script>
+    <script src="movie.js"></script>
+  </body>
+</html>

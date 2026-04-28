@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DC Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link href="lan.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <header class="navbar">
+      <a class="logo-box" id="logo-box" href="home.html" aria-label="Back to home">
+        <img src="img/logo.png" alt="Logo" />
+      </a>
+
+      <nav class="nav-info">
+        <a class="active" href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" class="contact-trigger">Contact</a>
+      </nav>
+
+      <div class="nav-app">
+        <a href="https://www.facebook.com/dulcie.do.497404/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="img/fb.png" alt="Facebook icon" />
+        </a>
+        <a href="https://www.instagram.com/dul.ciee__/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="img/ins.png" alt="Instagram icon" />
+        </a>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="home.html">Home</a>
+        <a class="active" href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" class="contact-trigger">Contact</a>
+      </div>
+    </header>
+
+    <!-- MAIN: LAN PAGE -->
+    <main class="lan-page">
+      <!-- LAN BLOCK: LAN TITLE LETTER ANIMATION + SINGLE IMAGE + PARAGRAPH STACK -->
+      <section class="lan-block">
+        <!-- "REIVENTION" LETTER ANIMATION-->
+        <h1 class="lan-title">
+          <span class="lan-letter lan-letter-1">R</span><span class="lan-letter lan-letter-2">E</span><span class="lan-letter lan-letter-3">I</span><span class="lan-letter lan-letter-4">V</span><span class="lan-letter lan-letter-5">I</span><span class="lan-letter lan-letter-6">E</span><span class="lan-letter lan-letter-7">N</span><span class="lan-letter lan-letter-8">T</span><span class="lan-letter lan-letter-9">I</span><span class="lan-letter lan-letter-10">O</span><span class="lan-letter lan-letter-11">N</span>
+        </h1>
+
+        <!-- LAN IMAGE-->
+        <img class="single-image" src="img/Lan.jpg" alt="Reivention artwork" />
+
+        <!-- PARAGRAPH STACK-->
+        <div class="paragraph-stack">
+          <p class="lan-description">
+            This project explores how Vietnamese traditional values can be modernized through digital image design.
+            The work is inspired by the lion dance, a familiar part of festivals in Vietnam. It aims to encourage
+            people, especially young people, to be confident and stay true to themselves.
+          </p>
+          <p class="lan-description">
+            The image of the lion dancer trying to remove the mask acts as a metaphor for having the courage to be
+            your authentic self, without being shaped by others' opinions or expectations. For this piece, I used
+            Illustrator to build and color the main design, then brought it into Photoshop to add more details and
+            refine the visuals.
+          </p>
+        </div>
+      </section>
+    </main>
+   <!-- PAWN CURSOR -->
+   <div class="custom-cursor" id="custom-cursor"></div>
+
+    <footer class="page-footer" aria-label="Page footer">
+    <p class="footer-text">2026 Dulcie Do. All rights reserved.</p>
+    </footer>
+
+    <!-- CONTACT POPUP-->
+    <div class="contact-popup-overlay" id="contact-popup-overlay">
+      <div class="contact-popup">
+        <button class="popup-close" id="popup-close" type="button" aria-label="Close popup">&times;</button>
+        <div class="popup-grid">
+          <div class="popup-left">
+            <h2 class="popup-title">CONTACT</h2>
+            <p class="popup-email">Email: dung21505@gmail.com</p>
+          </div>
+          <div class="popup-right">
+            <h2 class="popup-title">SOCIAL MEDIA</h2>
+            <p class="popup-social">Facebook: Dulcie Do</p>
+            <p class="popup-social">Instagram: dul.ciee__</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="contact.js"></script>
+    <script src="lan.js"></script>
+  </body>
+</html>

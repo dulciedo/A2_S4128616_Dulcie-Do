@@ -1,0 +1,167 @@
+
+* {
+  box-sizing: border-box; 
+}
+
+:root {
+  --text-main: #44312a; 
+  --beige: #f5f5dc; 
+  --green: #32cd32; 
+}
+
+html,
+body {
+  margin: 0; 
+  min-height: 100%; 
+  cursor: none; 
+}
+
+body {
+  color: var(--text-main); 
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 32px;
+  height: 32px;
+  background-image: url('img/pawn.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.05s ease-out;
+  transform: translate(-50%, -50%) scale(0.8) rotate(-20deg);
+  will-change: transform, left, top;
+}
+
+.custom-cursor.scaled {
+  transform: translate(-50%, -50%) scale(0.6) rotate(-20deg);
+  transition: transform 0.08s ease-out;
+}
+
+.contact-popup-overlay {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100vh; 
+  background: rgba(0, 0, 0, 0.5); 
+  display: flex; 
+  justify-content: center; 
+  z-index: 2000; 
+  opacity: 0; 
+  visibility: hidden; 
+  transition: opacity 0.3s ease, visibility 0.3s ease; 
+}
+
+.contact-popup-overlay.active {
+  opacity: 1; 
+  visibility: visible; 
+}
+
+.contact-popup {
+  position: relative; 
+  width: 100%; 
+  height: fit-content; 
+  max-height: 30vh; 
+  background: var(--beige); 
+  border-radius: 0 0 20px 20px; 
+  padding: 15px 60px; 
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-100%); 
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); 
+}
+
+.contact-popup-overlay.active .contact-popup {
+  transform: translateY(0); 
+}
+
+.popup-close {
+  position: absolute; 
+  top: 15px; 
+  right: 15px; 
+  width: 40px; 
+  height: 40px; 
+  border: none; 
+  border-radius: 8px; 
+  background: var(--green); 
+  color: white; 
+  font-size: 24px; 
+  font-weight: bold; 
+  cursor: none; 
+  display: grid; 
+  place-items: center; 
+  transition: background-color 0.2s ease, transform 0.2s ease; 
+}
+
+.popup-close:hover {
+  background: #A0DDD5; 
+  transform: scale(1.1); 
+}
+
+.popup-grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+}
+
+.popup-left,
+.popup-right {
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.popup-title {
+  margin: 0; 
+  font-family: "Cherry Bomb One", cursive; 
+  font-size: clamp(2.25rem, 4.5vw, 3rem); 
+  color: var(--text-main); 
+  line-height: 1; 
+  word-spacing: 0.3em; 
+}
+
+.popup-title .letter {
+  display: inline-block; 
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+.popup-title .letter.animate {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+
+
+.popup-email,
+.popup-social {
+  margin: 0; 
+  font-family: "Pangolin", cursive; 
+  font-size: clamp(1.1rem, 2vw, 1.5rem); 
+  color: var(--text-main); 
+  line-height: 1.2; 
+}
+
+
+
+
+@media screen and (max-width: 767px) { 
+  .popup-grid {
+    grid-template-columns: 1fr; 
+    gap: 30px; 
+  }
+
+  .contact-popup {
+    padding: 30px 20px; 
+  }
+  .popup-title {
+    font-size: clamp(1.5rem, 5vw, 2rem); 
+  }
+  .popup-email,
+  .popup-social {
+    font-size: clamp(1rem, 3vw, 1.2rem); 
+  }
+}

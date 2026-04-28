@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DC Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link href="diamond.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <header class="navbar">
+      <a class="logo-box" id="logo-box" href="home.html" aria-label="Back to home">
+        <img src="img/logo.png" alt="Logo" />
+      </a>
+
+      <nav class="nav-info">
+        <a class="active" href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" class="contact-trigger">Contact</a>
+      </nav>
+
+      <div class="nav-app">
+        <a href="https://www.facebook.com/dulcie.do.497404/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="img/fb.png" alt="Facebook icon" />
+        </a>
+        <a href="https://www.instagram.com/dul.ciee__/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="img/ins.png" alt="Instagram icon" />
+        </a>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="home.html">Home</a>
+        <a class="active" href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" class="contact-trigger">Contact</a>
+      </div>
+    </header>
+
+    <!-- MAIN: DIAMOND PAGE -->
+    <main class="diamond-page">
+      <!-- DIAMOND BLOCK-->
+      <section class="diamond-block">
+        <!--"DIAMOND!" LETTER ANIMATION -->
+        <h1 class="diamond-title">
+          <span class="diamond-letter diamond-letter-1">D</span><span class="diamond-letter diamond-letter-2">I</span><span class="diamond-letter diamond-letter-3">A</span><span class="diamond-letter diamond-letter-4">M</span><span class="diamond-letter diamond-letter-5">O</span><span class="diamond-letter diamond-letter-6">N</span><span class="diamond-letter diamond-letter-7">D</span><span class="diamond-letter diamond-letter-8">!</span>
+        </h1>
+
+        <!-- DIAMOND CONTENT GRID -->
+        <div class="diamond-content-grid">
+          <!-- CAROUSEL WRAP-->
+          <div class="carousel-wrap auto-carousel" data-speed="0.78">
+            <button class="carousel-but prev" type="button" aria-label="Scroll left">&#8249;</button>
+            <!-- CAROUSEL TRACK: 4 IMAGES -->
+            <div class="carousel-track">
+              <figure class="carousel-item">
+                <img src="img/diamond.png" alt="Diamond visual 1" />
+              </figure>
+              <figure class="carousel-item">
+                <img src="img/diamond1.png" alt="Diamond visual 2" />
+              </figure>
+              <figure class="carousel-item">
+                <img src="img/diamond2.png" alt="Diamond visual 3" />
+              </figure>
+              <figure class="carousel-item">
+                <img src="img/diamond3.png" alt="Diamond visual 4" />
+              </figure>
+            </div>
+            <button class="carousel-but next" type="button" aria-label="Scroll right">&#8250;</button>
+          </div>
+
+          <!-- DIAMOND DESCRIPTION-->
+          <p class="diamond-description">
+            Celebrating beauty and sharing it with others, while spreading a positive message to girls around the
+            world - that is the message "DIAMOND!" aims to convey. Through a sense of romance, lightness, and dreaminess,
+            the project invites viewers into a soft, imaginative atmosphere. At the same time, it reflects my personal
+            design style - someone who is naturally drawn to beauty.
+          </p>
+
+          <!-- VIDEO SHELL-->
+          <div class="video-shell">
+            <button class="video-play-but" type="button" aria-label="Play video">&#9658;</button>
+            <iframe id="youtube-player" class="diamond-video" data-click-play src="https://www.youtube.com/embed/wG77fcFQFi8?si=U-swxG2R-xSk0Ozl&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="video-cursor-overlay"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="page-footer" aria-label="Page footer">
+      <p class="footer-text">©2026 Dulcie Do. All rights reserved.</p>
+    </footer>
+
+    <!-- CONTACT POPUP-->
+    <div class="contact-popup-overlay" id="contact-popup-overlay">
+      <div class="contact-popup">
+        <button class="popup-close" id="popup-close" type="button" aria-label="Close popup">&times;</button>
+        <div class="popup-grid">
+          <div class="popup-left">
+            <h2 class="popup-title">CONTACT</h2>
+            <p class="popup-email">Email: dung21505@gmail.com</p>
+          </div>
+          <div class="popup-right">
+            <h2 class="popup-title">SOCIAL MEDIA</h2>
+            <p class="popup-social">Facebook: Dulcie Do</p>
+            <p class="popup-social">Instagram: dul.ciee__</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAWN CURSOR-->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <script src="contact.js"></script>
+    <script src="diamond.js"></script>
+  </body>
+</html>

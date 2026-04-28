@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DC Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Pangolin&display=swap"
+      rel="stylesheet"
+    />
+    <link href="lanyard.css" rel="stylesheet" />
+    <link href="contact.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <header class="navbar">
+      <a class="logo-box" id="logo-box" href="home.html" aria-label="Back to home">
+        <img src="img/logo.png" alt="Logo" />
+      </a>
+
+      <nav class="nav-info">
+        <a class="active" href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" class="contact-trigger">Contact</a>
+      </nav>
+
+      <div class="nav-app">
+        <a href="https://www.facebook.com/dulcie.do.497404/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="img/fb.png" alt="Facebook icon" />
+        </a>
+        <a href="https://www.instagram.com/dul.ciee__/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="img/ins.png" alt="Instagram icon" />
+        </a>
+      </div>
+
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="home.html">Home</a>
+        <a class="active" href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" class="contact-trigger">Contact</a>
+      </div>
+    </header>
+
+    <!-- MAIN: LANYARD PAGE -->
+    <main class="lanyard-page">
+      <!-- LANYARD BLOCK-->
+      <section class="lanyard-block">
+        <!--"LANYARD" LETTER ANIMATION-->
+        <h1 class="lanyard-title">
+          <span class="lanyard-letter lanyard-letter-1">L</span><span class="lanyard-letter lanyard-letter-2">A</span><span class="lanyard-letter lanyard-letter-3">N</span><span class="lanyard-letter lanyard-letter-4">Y</span><span class="lanyard-letter lanyard-letter-5">A</span><span class="lanyard-letter lanyard-letter-6">R</span><span class="lanyard-letter lanyard-letter-7">D</span>
+        </h1>
+
+        <!-- IMAGE GRID -->
+        <section class="image-grid">
+          <article class="image-box box-1">
+            <img class="box-image" src="img/lanyard2.png" alt="Lanyard design 2" />
+          </article>
+
+          <article class="image-box box-2">
+            <img class="box-image" src="img/lanyard.png" alt="Lanyard design 1" />
+          </article>
+        </section>
+
+        <!-- LANYARD DESCRIPTION -->
+        <p class="lanyard-description">
+          This is a merch design I created for the RMIT Volleyball Club (RVBC), featuring a dragon mascot playing
+          volleyball. The dragon represents passion and the drive to rise high to reach the ball, symbolizing both
+          the team's pursuit of victory and each individual's personal goals. The use of two contrasting colors also
+          allows the wearer of the lanyard to express their own style.
+        </p>
+      </section>
+    </main>
+    <!-- PAWN CURSOR-->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <footer class="page-footer" aria-label="Page footer">
+    <p class="footer-text">2026 Dulcie Do. All rights reserved.</p>
+    </footer>
+
+    <!-- CONTACT POPUP-->
+    <div class="contact-popup-overlay" id="contact-popup-overlay">
+      <div class="contact-popup">
+        <button class="popup-close" id="popup-close" type="button" aria-label="Close popup">&times;</button>
+        <div class="popup-grid">
+          <div class="popup-left">
+            <h2 class="popup-title">CONTACT</h2>
+            <p class="popup-email">Email: dung21505@gmail.com</p>
+          </div>
+          <div class="popup-right">
+            <h2 class="popup-title">SOCIAL MEDIA</h2>
+            <p class="popup-social">Facebook: Dulcie Do</p>
+            <p class="popup-social">Instagram: dul.ciee__</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+    <script src="lanyard.js"></script>
+  </body>
+</html>
